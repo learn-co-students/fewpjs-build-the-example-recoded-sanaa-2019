@@ -3,10 +3,8 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+
 let modal = document.getElementById("modal").className="hidden"
-fetch('http://localhost:3000/likes')
-  .then(resp => resp.json())
-  .then(json => console.log(json));
 let likeIcon=document.querySelector('.like-glyph')
 likeIcon.addEventListener('click',function(){
 
@@ -32,7 +30,6 @@ console.log("Empty")
 
   }, 5000);
 })
-  
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
