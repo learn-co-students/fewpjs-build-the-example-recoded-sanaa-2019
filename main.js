@@ -3,6 +3,22 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const articles = document.querySelector('.all-articles')
+articles.addEventListener('click', f => {
+  mimicServerCall().then(r => {
+    if (f.target.className === 'like') {
+      if (f.target.children[0].innerHTML === EMPTY_HEART) {
+        f.target.children[0].innerHTML = FULL_HEART
+        f.target.children[0].style.color = 'red'
+      } else {
+        f.target.children[0].innerHTML = EMPTY_HEART
+        console.log('object')
+      }
+
+    }
+  }).catch(() => { document.querySeslector('.hidden').className = 'show' })
+})
+
 
 
 
