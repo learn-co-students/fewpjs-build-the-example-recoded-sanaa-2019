@@ -22,6 +22,7 @@ like.style.color='red'
 })
 }
 catch(e){
+  console.log(e);
   let remove=document.querySelector('#modal');
   setTimeout(()=>{
      remove.className=remove.className.replace("hidden","")
