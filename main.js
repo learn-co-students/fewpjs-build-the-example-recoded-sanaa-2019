@@ -4,9 +4,7 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 let mod=document.getElementById('modal').className='hidden';
-mod.addEventListener('onload',function(){
 
-})
 
 let like=document.querySelector('.like-glyph')
 try{
